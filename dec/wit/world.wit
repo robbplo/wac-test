@@ -1,0 +1,6 @@
+package math:dec;
+
+/// An example world for the component to target.
+world dec {
+    export dec: func(num: u64) -> u64;
+}

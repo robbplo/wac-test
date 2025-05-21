@@ -1,0 +1,11 @@
+package math:calc-cli;
+
+world calc-cli {
+    enum operation {
+        increment,
+        decrement,
+    }
+    import calc: func(operation: operation, num: u64) -> u64;
+
+    export wasi:cli/run@0.2.3;
+}

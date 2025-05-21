@@ -1,0 +1,6 @@
+package math:inc;
+
+/// An example world for the component to target.
+world inc {
+    export inc: func(num: u64) -> u64;
+}

@@ -1,0 +1,12 @@
+package math:operations;
+
+world calc {
+    enum operation {
+        increment,
+        decrement,
+    }
+
+    import dec: func(num: u64) -> u64;
+    import inc: func(num: u64) -> u64;
+    export calc: func(operation: operation, num: u64) -> u64;
+}

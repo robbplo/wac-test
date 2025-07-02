@@ -1,0 +1,4 @@
+[overrides]
+"bb:simple" = { path = "/home/robbin/projects/personal/wasm-jco-wac/components/simple-js/wit" }
+"math:inc" = { path = "/home/robbin/projects/personal/wac-test/inc/wit" }
+

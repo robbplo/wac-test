@@ -1,14 +1,13 @@
-#[allow(warnings)]
-mod bindings;
+wit_bindgen::generate!({ generate_all });
 
-use bindings::Guest;
+use crate::exports::math::inc::inc::Guest;
 
-struct Component;
+struct Inc;
 
-impl Guest for Component {
+impl Guest for Inc {
     fn inc(num: u64) -> u64 {
         num + 1
     }
 }
 
-bindings::export!(Component with_types_in bindings);
+export!(Inc);
